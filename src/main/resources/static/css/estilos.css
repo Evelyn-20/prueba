@@ -1,0 +1,130 @@
+/*Para todo*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Para todo lo que este dentro del body*/
+body{
+    font-family: sans-serif;
+    background-color: azure;
+    padding: 80px 20px 0;
+}
+
+/*Para el encabezado*/
+header{
+    position: fixed; /*Se indica después la posición*/
+    background-color: dodgerblue;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+}
+
+/*Para el menu del costado*/
+aside{
+    position: fixed;
+    background-color: lightskyblue;
+    top: 80px;
+    left: 0;
+    bottom: 20px;
+    width: 20%;
+}
+
+/*Para la seccion*/
+section{
+    overflow: scroll;
+    position: fixed;
+    background-color: white;
+    top: 80px;
+    left: 20%;
+    bottom: 20px;
+    width: 80%;
+}
+
+/*Para el pie de página*/
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: lightblue;
+    color: black;
+}
+
+/*Cuando la linea tr sea de head*/
+thead tr{
+    background-color: black;
+    color: white;
+}
+
+/*Todas las lineas del body donde sean impar*/
+tbody tr:nth-child(odd){
+    background-color: royalblue;
+    color: white;
+}
+
+/*Todas las lineas del body donde sean par*/
+tbody tr:nth-child(even){
+    background-color: lightsteelblue;
+    color: black;
+}
+
+/*Para los links*/
+a{
+    text-decoration: none;
+    background-color: mediumblue;
+    color: white;
+}
+
+/*Cuando se esta sobre*/
+a:hover{
+    background-color: black;
+    color: white
+}
+
+/*Clase del menu*/
+.nav{
+    display: flex; /*flotante*/
+    justify-content: space-between; /*mantiene un espaciado entre cada elemento*/
+    max-width: 992px;
+    margin: 0 auto; /*izquierdo 0 y después automatico*/
+}
+
+/*Clase para el estilo del link del menu*/
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+/*Clase para el estilo del menu*/
+.nav-menu{
+    display: flex;
+    margin-left: 40px;
+    list-style: none;
+}
+
+/*Clase para el estilo del link del menu*/
+.nav-menu-link{
+    font-size: 18px;
+    margin: 0 18px;
+    line-height: 90px;
+    width: max-content;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+/*Clase para el estilo del link del menu cuando se esta encima*/
+.nav-menu-link:hover{
+    background-color: #5b8cf4;
+    transition: 0.5s; /*delay de medio segundo mientras pasa de uno a otro*/
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 90px;
+}
